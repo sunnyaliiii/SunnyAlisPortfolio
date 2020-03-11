@@ -1,6 +1,6 @@
 function showDefine() {
     $('.main-content .content-wrap').children().hide();
-    $('#define').fadeIn();
+    $('.define-container').fadeIn();
     $('.main-content').addClass("align-center");
     $('.main-content').removeClass("clear-padding");
     $('#projects-button').click(function() {
@@ -14,6 +14,7 @@ function showProjects() {
     $('.projects-wrap').fadeIn();
     $('.main-content').addClass("clear-padding");
     $('.main-content').removeClass("align-center");
+    return false;
 }
 
 function showAbout() {
